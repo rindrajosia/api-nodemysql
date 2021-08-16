@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : lun. 16 août 2021 à 00:13
+-- Généré le : lun. 16 août 2021 à 08:22
 -- Version du serveur :  8.0.26-0ubuntu0.20.04.2
 -- Version de PHP : 7.4.11
 
@@ -34,6 +34,17 @@ CREATE TABLE `candidate` (
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Déchargement des données de la table `candidate`
+--
+
+INSERT INTO `candidate` (`id`, `name`, `email`) VALUES
+(1, 'Josia', 'josia@gmail.com'),
+(2, 'Marina', 'marina@gmail.com'),
+(3, 'Kristina', 'kreistina@gmail.com'),
+(4, 'Gabi', 'gabi@gmail.com'),
+(5, 'Feno', 'feno@gmail.com');
+
 -- --------------------------------------------------------
 
 --
@@ -46,6 +57,22 @@ CREATE TABLE `note` (
   `round` int NOT NULL,
   `note` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `note`
+--
+
+INSERT INTO `note` (`id`, `candidate`, `round`, `note`) VALUES
+(1, 1, 1, 3),
+(2, 1, 2, 4),
+(6, 1, 3, 5),
+(7, 2, 1, 5),
+(8, 2, 2, 5),
+(9, 2, 3, 10),
+(10, 3, 1, 2),
+(11, 3, 2, 1),
+(12, 3, 3, 2),
+(13, 4, 1, 4);
 
 -- --------------------------------------------------------
 
@@ -100,13 +127,13 @@ ALTER TABLE `round`
 -- AUTO_INCREMENT pour la table `candidate`
 --
 ALTER TABLE `candidate`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `note`
 --
 ALTER TABLE `note`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT pour la table `round`
