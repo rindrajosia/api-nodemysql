@@ -30,8 +30,8 @@ This project is about using expressjs with mysql. I have design database tables 
 1] For candidate, your data should be in a json format and look like:
 
 {
-"name": "Feno",
-"email": "feno@gmail.com"
+"name": "Setra",
+"email": "setra@gmail.com"
 }
 * name and email are required. email should be unique.
 
