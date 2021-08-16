@@ -37,8 +37,8 @@ This project is about using expressjs with mysql. I have design database tables 
 
 2] For score, your data should be in a json format and look like:
 {
-"candidate": 1,
-"round": 1,
+"candidate": 4,
+"round": 2,
 "note": 4
 }
 * candidate and round are required. There should be a corresponding data inside candidate and round tables.
