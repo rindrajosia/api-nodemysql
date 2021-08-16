@@ -24,7 +24,7 @@ This project is about using expressjs with mysql. I have design database tables 
 | http://localhost:5000/api/candidates                                    | POST   | Create a new candidate                               |
 | http://localhost:5000/api/score/high                                    | GET    | Get highest scoring candidate                        |
 | http://localhost:5000/api/score/average                                 | GET    | GET average scores per round for all candidates      |
-| https://localhost:5000/api/score                                        | POST   | Insert new score                                     |
+| http://localhost:5000/api/score                                         | POST   | Insert new score                                     |
 
 ## POST method:
 1] For candidate, your data should be in a json format and look like:
@@ -64,6 +64,8 @@ $ git checkout feature
 * You need to install the required packages:
 
 $ npm install
+
+### File free to update information inside srever/config/index.js based on your environment
 
 * And run the server:
 
